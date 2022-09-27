@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charest="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css끌고오기-->
+    <link rel="stylesheet" href="carousel.css"/>
+    <title>Slide with css</title>
+</head>
+<body>
+    <button class="button01">1</button>
+    <button class="button02">2</button>
+    <button class="button03">3</button>
+    <div style="overflow: hidden">
+        <div class="slideContainer">
+            <dv class="slide">
+                <img src="images/picture1.jpg">
+            </dv>
+            <dv class="slide">
+                <img src="images/picture2.jpg">
+            </dv>
+            <dv class="slide">
+                <img src="images/picture3.jpg">
+            </dv>
+        </div>
+    </div>
+
+   <!--<script src="move.js"></script>-->
+   <script>
+    //버튼 이동식
+    
+    document.querySelector('.button01').addEventListener('click', function(){
+        document.querySelector('.slideContainer').style.transform = 'translate(0vw)';
+
+    })
+    document.querySelector('.button02').addEventListener('click', function(){
+        document.querySelector('.slideContainer').style.transform = 'translate(-100vw)';
+
+    })
+    document.querySelector('.button03').addEventListener('click', function(){
+        document.querySelector('.slideContainer').style.transform = 'translate(-200vw)';
+
+    })
+</script>
+</body>
+</html>

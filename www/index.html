@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="IE=edge">
+<title>Hello World</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="font.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrap">
+	<div id ="time">
+		<script type="text/javascript">
+					whatTime = new Date();
+					nowH = whatTime.getHours();
+					nowMin = whatTime.getMinutes();
+					nowY = whatTime.getYear();
+					nowM = whatTime.getMonth();
+					nowD = whatTime.getDate();
+					document.write("::Today:: ");
+					document.write((nowY+1900) + "년 " + (nowM+1) + "월 " + nowD + "일 ");
+					document.write("&nbsp;&nbsp;&nbsp;&nbsp;::Now::");
+					if((nowH/12)>0)
+						document.write(" PM ");
+					else
+						document.write(" AM ");
+					document.write((nowH)%12 + "시 " + nowMin + "분");
+			</script>
+			<div class="timebox1">
+			<em>
+				<a href="https://twitter.com/share" data-text="YJKima" data-via="YJKima" data-lang="ko" data-count="none">::<img alt="" src="images/twitter.png">트윗::</a>
+				<a href="http://validator.w3.org/check?uri=referer">::웹표준::</a>
+				<a href="login.html">::Log-In::</a>
+			</em>
+			</div>
+	</div>
+	<header id="top">
+		<h1>For Fresh~:)</h1>
+		<div class="topbox1"><a href="index.html">This is website.</a></div>
+		<div class="topbox2">I Can't help but face reality</div>
+	</header>
+	<nav id="mainNav">
+	  <ul>
+		<li><h2><a href="index.html">main</a></h2></li>
+		<li><h2>portfolio</h2>
+			<ul>
+				<li><h3><a href="slide.html">#1</a></h3></li>
+				<li><h3><a href="clonCoding01.html">#2</a></h3></li></ul></li>
+		<li><h2><a href="toDoList.html">personal documents</a></h2></li>
+		<li><h2><a href="table01.html">Who is me</a></h2></li>
+		<li><h2><a href="register.html">Sign-In</a></h2></li>
+	  </ul>
+	</nav>
+	<section class="content" id="content">
+	<header>
+			 <h4>Title</h4>
+	</header>
+	<article>
+	<h5>subTitle1</h5>
+	<p>::link:: <a href="https://github.com/youngjeek/ch01">my gitHub</a></p>
+
+	<h5>subTitle2</h5>
+	<ul>
+		<li><em>HTML</em></li>
+		<li><em>CSS</em></li>
+		<li><em>JavaScript</em></li>
+		<li><em>React</em></li>
+		<li><em>Java</em></li>
+		<li><em>기본기라도 만져본 것 추가</em></li>
+	</ul>
+	<h5>subTitle3</h5>
+	<blockquote><mark>for[f⊃:(r)]</mark>전치사 1. 목적,의도 <em>…을 위해[위한]</em> …을 목적으로 하여<br>
+		<mark>fresh [fre∫]</mark>형용사 1. 새로운, 최신의; 새로이[갓] 만든, 신작의 ... ... 7. 젊은; <em>기운찬</em> 활발한, 발랄한, 팔팔한. ... ... 12. 경험 없는, 미숙한, 풋내기의; 《속어》 <em>(대학의) 신입생의.</em> a ~ hand 초심자.  ... ...&nbsp;명사 1. (the fresh) (인생·일년·하루의) 시작, 초기. 2. 《속어》 <em>신입생; (the freshes)</em> 신입생 클라스. 3. =freshet.<br><br></blockquote>
+	<h5 id="hidden">사이트설명</h5>
+	<p>사전적 정의를 쭉 훑어보니 FRESH란 단어가 워낙 좋은 느낌이고 이 웹페이지 목적을 "초심을 되짚어 어려움을 해소하는 공간"으로 삼으려합니다.<br>
+	<mark>꾸준히 꾸준히 더 좋게 더 편하게</mark><br>
+	실사용자의 요구와 편의를 고민하는 개발자를 목표로 합니다.</p>
+	</p>
+	</article>
+	</section>
+	<footer>
+	<p><a href="m/index.html"><strong>모바일ver</strong></a><br><br>
+	Copyright &copy; 2022 by 김영지(Young-ji Kim), For more Information,<a href="info.html">e-mail</a></p>
+	</footer>
+</div>
+</body>
+</html>

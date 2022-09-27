@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>::Hello World::</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="font.css" rel="stylesheet" type="text/css">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="wrap">
+		<div id ="time">
+			<script type="text/javascript">
+						whatTime = new Date();
+						nowH = whatTime.getHours();
+						nowMin = whatTime.getMinutes();
+						nowY = whatTime.getYear();
+						nowM = whatTime.getMonth();
+						nowD = whatTime.getDate();
+						document.write("::Today:: ");
+						document.write((nowY+1900) + "년 " + (nowM+1) + "월 " + nowD + "일 ");
+						document.write("&nbsp;&nbsp;&nbsp;&nbsp;::Now::");
+						if((nowH/12)>0)
+							document.write(" PM ");
+						else
+							document.write(" AM ");
+						document.write((nowH)%12 + "시 " + nowMin + "분");
+				</script>
+				<div class="timebox1">
+				<em>
+					<a href="https://twitter.com/share" data-text="YJKima" data-via="YJKima" data-lang="ko" data-count="none">::<img alt="" src="images/twitter.png">트윗::</a>
+					<a href="http://validator.w3.org/check?uri=referer">::웹표준::</a>
+					<a href="login.html">::Log-In::</a>
+				</em>
+				</div>
+		</div>
+		<header id="top">
+			<h1>For Fresh~:)</h1>
+			<div class="topbox1"><a href="index.html">This is website.</a></div>
+			<div class="topbox2">I Can't help but face reality</div>
+		</header>
+		<nav id="mainNav">
+		  <ul>
+			<li><h2><a href="index.html">main</a></h2></li>
+			<li><h2>portfolio</h2>
+				<ul>
+					<li><h3><a href="slide.html">#1</a></h3></li>
+					<li><h3><a href="clonCoding01.html">#2</a></h3></li></ul></li>
+			<li><h2><a href="toDoList.html">personal documents</a></h2></li>
+			<li><h2><a href="table01.html">Who is me</a></h2></li>
+			<li><h2><a href="register.html">Sign-In</a></h2></li>
+		  </ul>
+		</nav>
+	<section class="content" id="content">
+	 <header>
+		 <h4>회원가입</h4>
+	</header>
+	<article>
+<form>
+<fieldset id="fieldsetColor1">
+<legend>아이디n비밀번호</legend>
+	<div class="colsDiv">
+		<div class="list">아이디*</div>
+		<div class="ist">비밀번호*</div>
+	</div>
+	<div class="colsDiv">
+		<div><input id="userId" name="userId" type="text" maxlength="8" required autofocus><input id="Check" name="idCheck" type="button" value="가능">
+		</div>
+		<div><label for="userPw1"><input id="userPw1" name="userPw" type="password" maxlength="16" required></label></div>
+	</div>
+	<div class="colsDiv">
+		<div class="list">&nbsp;</div>
+		<div class="list">비번확인*</div>
+	</div>
+	<div class="colsDiv">
+		<div>*표시 항목은 필수입력사항</div>
+		<div><label for="userPw2"><input id="userPw2" name="userPwCheck" type="password" maxlength=16 required></label>
+		</div>
+	</div>
+</fieldset>
+<fieldset id="fieldsetColor2">
+<legend>개인정보</legend>
+	<div class="colsDiv">
+		<div class="list">이름*</div>
+		<div class="ist">E-mail*</div>
+	</div>
+	<div class="colsDiv">
+		<div><input id="LastName" name="LastName" type="text" value="" placeholder="성" required>
+		<input id="FirstName" name="FirstName" type="text" value="" placeholder="이름" required>
+		</div>
+		<div><input id="MailAddress" name="MailAddress" type="email" placeholder="abc@domain.com" required>
+		</div>
+	</div>
+</fieldset>
+<fieldset id="fieldsetColor3">
+<legend>추가정보</legend>	
+	<div class="colsDiv">
+		<div class="list">연락처</div>
+		<div class="ist">성별</div>
+		<div class="ist">태어난 날</div>
+	</div>
+	<div class="colsDiv">
+		<div><label for="phone"><input id="phone" name="phone" placeholder="+82) 010-0000-0000"></label></div>
+		<div>
+			<label for="gender">
+			<select id="gender" name="gender">
+			<option selected>성별</option>
+			<option>여성</option>
+			<option>남성</option>
+			<option>기타</option>
+			</select></label>
+		</div>
+		<div>
+			<label class="year"><input id="BirthYear" name="BirthYear" type="text" value="" maxlength="4" placeholder="연도"></label>
+			<label class="month">
+				<select id="BirthMonth" name="BirthMonth">
+				<option value="">월</option>
+				<option  value="01" >1월</option>
+				<option  value="02" >2월</option>
+				<option  value="03" >3월</option>
+				<option  value="04" >4월</option>
+				<option  value="05" >5월</option>
+				<option  value="06" >6월</option>
+				<option  value="07" >7월</option>
+				<option  value="08" >8월</option>
+				<option  value="09" >9월</option>
+				<option  value="10" >10월</option>
+				<option  value="11" >11월</option>
+				<option  value="12" >12월</option>
+				</select>
+			</label>
+			<label class="day"><input id="BirthDay" name="BirthDay" type="text" value="" maxlength="2" placeholder="일"></label>
+			</div>
+		</div>
+		<div class="colsDiv">
+		<textarea name="self_intro" cols="70" rows="6" placeholder="하고픈 말 자유로이 쓰세요:-)"></textarea></div>
+	</fieldset>
+	<br>
+	<input id="Submit" type="submit" value="가입"><input id="Reset" type="reset" value="다시쓰기"> 가입 기재사항들은 사용자 식별 외에 다른 용도로 일체 사용하지 않습니다.
+	</form>
+	</article>
+	</section>
+<footer>
+	<p><a href="m/index.html"><strong>모바일ver</strong></a><br><br>
+	Copyright &copy; 2022 by 김영지(Young-ji Kim), For more Information,<a href="info.html">e-mail</a></p>
+	</footer>
+</div>
+</body>
+</html>

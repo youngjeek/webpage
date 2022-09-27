@@ -1,0 +1,12 @@
+.slideContainer{
+    width : 300vw;
+    transition : transform 0.5s;
+    transform : translate -100vw;
+}
+.slide {
+    width : 100vw;
+    float : left;
+}
+.slide img {
+    width: 100%;
+}

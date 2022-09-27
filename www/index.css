@@ -1,0 +1,246 @@
+﻿@charset "utf-8";
+h1, h2, h3, h4, h5, h6, body{
+	margin:0;
+	padding:0;
+	font:bold 16px '나눔고딕', 'NanumGothic';
+}
+/* HTML5 tages */
+header, nav, section, article, figure,footer {
+	display:block;
+}
+body {
+	position: static;
+	background: url(images/bg.jpg) repeat left top;
+}
+footer{
+	position:static;
+	margin: 0;
+	padding-bottom: 1em;
+	top: 95%;
+	height : 100%;
+	width:810px;
+	color: #353535;
+	font: normal 12px '나눔고딕', 'NanumGothic';
+	text-align: center;
+}
+/*인용문 문단별 강조*/
+blockquote {
+	margin: 0.5em 0em 0.5em 1em;
+	padding: 0;
+	font-size:13px;
+}
+p a{
+	display: inline;
+	margin: 0.2em;
+	padding: 0.2em;
+	color: #353535;
+	text-decoration:none;
+	background-color:#d5d5d5;
+}
+p a:hover, em a:hover{
+	color:#33ffff;
+}
+em a{
+	display: inline;
+	margin: 0.2em;
+	padding: 0 0.5em;
+	color: #000000;
+	text-decoration:none;
+	background-color:white;
+	border:solid 1px #d5d5d5;
+}
+/* CSS Document */
+
+#wrap{
+	margin: 0 auto;
+	padding: 0;
+	height : 100%;
+	width: 810px;
+}
+#time{
+	position:fixed; ;
+	top: 0;
+	padding: 0.3em 0;
+	width:810px;
+	color: silver;
+	font-size:12px;
+	background: #f6f6f6;
+}
+.timebox1{
+	float:right;
+}
+#top {
+	position:fixed;
+	top: 20px;
+	height: 98px;
+	width: 810px;
+	font-family: '나눔손글씨 붓','NanumBrush';
+	border-bottom: 2px solid #4c4c4c;
+	background:#33ffff;
+}
+#top h1{
+	position: absolute;
+	left: 0.5em;
+	color: #ff99ff;
+	font-family: 'Mistral';
+	font-size:30px;
+}
+#top a{
+	color: white;
+	font-size:45px;
+	text-decoration:underline;
+}
+#top a:hover {
+	color: #ff11ff;
+	text-decoration:none;
+}
+/*top의 글씨들 위치 지정*/
+.topbox1{
+	z-index: 1;
+	position: relative;
+	top: 2.5em;
+	left: 8em;
+	}
+.topbox2{
+	z-index: 2;
+	position: relative;
+	top: -1.1em;
+	left: 13em;
+	color: #ff11ff;
+	font-family: '나눔손글씨 펜','NanumPen';
+	font-size:20px;
+}
+/*메뉴영역*/
+#mainNav{
+	position:fixed;
+	top:120px;
+	height:23px;
+	width: 810px;
+	border-bottom: 2px solid black;	
+}
+#mainNav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height: 23px;
+	color: #33ffff;
+	background: #353535;
+}
+#mainNav ul li{
+	position: relative;
+	padding: 0 1.5em;
+	line-height: 23px;
+	float:left;
+	background-image: -webkit-gradient(
+		linear, 
+		left top,	
+		right bottom,
+		color-stop(0.03, rgb(60,60,60)),
+		color-stop(0.97, rgb(53,53,53))
+	);
+	background-image: -moz-linear-gradient(
+		center right ,
+		rgb(60,60,60),
+		rgb(53,53,53)
+	);
+}
+#mainNav ul li h2 a {
+	display: block;
+	color: #33ffff;
+	text-decoration:none;
+}
+#mainNav ul li h2 a:hover {
+	color: #ff99ff;
+	text-decoration:underline;
+}
+/*서브메뉴*/
+#mainNav ul li ul {
+	display: none;
+
+}
+#mainNav ul li:hover ul {
+	display: block;
+	opacity: 0.8;
+	position:absolute;
+	top: 5px;
+	left:0;
+	list-style-type: none;
+	background: none;
+}
+#mainNav ul li ul li{
+	position: static;
+	float: none;
+	height:0;
+	text-align:left;
+	background: black;
+}
+#mainNav ul li ul li h3{
+	background: black;
+}
+#mainNav ul li:hover ul li{	
+	position: relative;
+	top:20px;
+	height: 25px;
+	line-height: 25px;
+}
+#mainNav ul li ul li h3 a {
+	color: #00ffff;
+	text-decoration: none;
+}
+#mainNav ul li ul li h3 a:hover {
+	color: #ff99ff;
+	text-decoration:underline;
+}
+.content{
+	position:static;
+	margin-top:144px;
+	padding: 0 1.5em;
+}
+#content {
+	overflow: hidden;
+	font: normal 15px '나눔고딕', 'NanumGothic';
+	border: 1px dashed #4c4c4c;
+}
+#content h4 {
+	margin: 0.3em 0;
+	padding: 0.3em 0.8em;
+	background-color: white;
+	font-size: 23px;
+	border-bottom: 5px solid #ff11ff;
+}
+#content article {
+	margin: 1em 0;
+	padding: 0.3em 0 2em 0;
+	background-color: #f6f6f6;
+	border-bottom: 2px solid #ff11ff;
+}
+#content h5 {
+	margin: 0.2em 0 -0.1em 0;
+	color: #ff99ff;
+	font: bold 25px '휴먼아미체';
+}
+
+#content mark, p mark {
+	margin:0.2em;
+	font: bold 22px '나눔손글씨 펜','NanumPen';
+	background: none;
+}
+#content em, p em{
+	margin: auto 0.2em;
+	padding: 0 0.2em;
+	color:#33ffff;
+	background:#353535;
+}
+#content ul,ol{
+	background:#ffffff;
+}
+#content ul li{
+	margin: 0.5em auto;
+	list-style-type: square;
+}
+
+#hidden{
+	display: none;
+	border:none;
+ }
